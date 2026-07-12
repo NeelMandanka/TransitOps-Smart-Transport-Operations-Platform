@@ -1,15 +1,16 @@
 const express = require("express");
 
 const authRoutes = require("./authRoutes");
+const vehicleRoutes = require("./vehicleRoutes");
+const driverRoutes = require("./driverRoutes");
 
 const router = express.Router();
 
 router.use("/auth", authRoutes);
-
-/*
-Developer 2
 router.use("/vehicles", vehicleRoutes);
 router.use("/drivers", driverRoutes);
+
+/*
 
 Developer 3
 router.use("/trips", tripRoutes);
