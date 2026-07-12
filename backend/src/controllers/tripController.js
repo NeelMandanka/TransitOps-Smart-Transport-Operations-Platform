@@ -11,11 +11,10 @@ const createTrip = async (req, res, next) => {
 
 
         return res.status(201).json(
-            new ApiResponse(
-                201,
-                trip,
-                "Trip created successfully"
-            )
+            ApiResponse.created(
+                "Trip created successfully",
+                trip
+            )   
         );
 
 

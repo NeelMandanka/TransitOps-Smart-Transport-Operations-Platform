@@ -12,7 +12,7 @@ const {
 
 const validationMiddleware = require("../middleware/validationMiddleware");
 
-
+router.get("/", tripController.getAllTrips);
 
 // Create Trip
 router.post(
