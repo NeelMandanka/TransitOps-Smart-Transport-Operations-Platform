@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ROLE_LABELS, useAuth } from "../context/AuthContext";
 
-export const PAGE_ACCESS = {
+export const PAGE_ACCESS = { 
   dashboard: Object.keys(ROLE_LABELS),
   vehicles: ["fleet_manager", "driver"],
   drivers: ["fleet_manager", "safety_officer"],
