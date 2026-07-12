@@ -8,7 +8,7 @@ const expenseSchema = new mongoose.Schema(
       type: String,
       enum: ["Toll", "Maintenance", "Fuel", "Parking", "Other"],
       default: "Other",
-    },
+    }, 
     amount: { type: Number, default: 0 },
     note: { type: String, trim: true },
     expenseDate: { type: Date, default: Date.now },
